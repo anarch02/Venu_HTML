@@ -561,247 +561,147 @@
         </header><!-- End .header -->
 
         <main class="main">
-        	<div class="page-header text-center" style="background-image: url('assets/images/page-header-bg.jpg')">
-        		<div class="container">
-        			<h1 class="page-title">Оформление<span>Корзинка</span></h1>
-        		</div><!-- End .container -->
-        	</div><!-- End .page-header -->
-            <nav aria-label="breadcrumb" class="breadcrumb-nav">
+            <div class="page-header text-center" style="background-image: url('assets/images/page-header-bg.jpg')">
+                <div class="container">
+                    <h1 class="page-title">Мой аккаунт<span>Магазин</span></h1>
+                </div><!-- End .container -->
+            </div><!-- End .page-header -->
+            <nav aria-label="breadcrumb" class="breadcrumb-nav mb-3">
                 <div class="container">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                        <li class="breadcrumb-item"><a href="#">Корзинка</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Оформление</li>
+                        <li class="breadcrumb-item"><a href="#">Магазин</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Мой аккаунт</li>
                     </ol>
                 </div><!-- End .container -->
             </nav><!-- End .breadcrumb-nav -->
-
+            
             <div class="page-content">
-            	<div class="checkout">
+            	<div class="dashboard">
 	                <div class="container">
-            			<div class="checkout-discount">
-                            <form action="#">
-                                <input type="text" class="form-control" required id="checkout-discount-input">
-                                <label for="checkout-discount-input" class="text-truncate">Есть купон? <span>Нажмите здесь, чтобы ввести код</span></label>
-                            </form>
-                        </div><!-- End .checkout-discount -->
-                        
-            			<form action="#">
-		                	<div class="row">
-                                <div class="col-lg-9">
-                                    <h2 class="checkout-title">Детали Оплаты</h2><!-- End .checkout-title -->
+	                	<div class="row">
+	                		<aside class="col-md-4 col-lg-3">
+                                <ul class="nav nav-dashboard flex-column mb-3 mb-md-0" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="tab-dashboard-link" data-toggle="tab" href="#tab-dashboard" role="tab" aria-controls="tab-dashboard" aria-selected="true">Панель управления</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab-orders-link" data-toggle="tab" href="#tab-orders" role="tab" aria-controls="tab-orders" aria-selected="false">Заказы</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab-downloads-link" data-toggle="tab" href="#tab-downloads" role="tab" aria-controls="tab-downloads" aria-selected="false">Загрузки</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab-address-link" data-toggle="tab" href="#tab-address" role="tab" aria-controls="tab-address" aria-selected="false">Адреса</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab-account-link" data-toggle="tab" href="#tab-account" role="tab" aria-controls="tab-account" aria-selected="false">Детали аккаунта</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Выйти</a>
+                                    </li>
+                                </ul>
+                            </aside><!-- End .col-lg-3 -->
+                            
+
+	                		<div class="col-md-8 col-lg-9">
+	                			<div class="tab-content">
+								    <div class="tab-pane fade show active" id="tab-dashboard" role="tabpanel" aria-labelledby="tab-dashboard-link">
+                                        <p>Здравствуйте, <span class="font-weight-normal text-dark">Пользователь</span> (не <span class="font-weight-normal text-dark">Пользователь</span>? <a href="#">Выйти</a>) 
+                                        <br>
+                                        Из вашей панели управления аккаунтом вы можете просматривать свои <a href="#tab-orders" class="tab-trigger-link link-underline">последние заказы</a>, управлять <a href="#tab-address" class="tab-trigger-link">адресами доставки и выставления счетов</a>, и <a href="#tab-account" class="tab-trigger-link">редактировать свой пароль и детали аккаунта</a>.</p>
+                                    </div><!-- .End .tab-pane -->
+                                    
+                                    <div class="tab-pane fade" id="tab-orders" role="tabpanel" aria-labelledby="tab-orders-link">
+                                        <p>Заказы еще не сделаны.</p>
+                                        <a href="category.html" class="btn btn-outline-primary-2"><span>ПЕРЕЙТИ В МАГАЗИН</span><i class="icon-long-arrow-right"></i></a>
+                                    </div><!-- .End .tab-pane -->
+                                    
+                                    <div class="tab-pane fade" id="tab-downloads" role="tabpanel" aria-labelledby="tab-downloads-link">
+                                        <p>Загрузки еще не доступны.</p>
+                                        <a href="category.html" class="btn btn-outline-primary-2"><span>ПЕРЕЙТИ В МАГАЗИН</span><i class="icon-long-arrow-right"></i></a>
+                                    </div><!-- .End .tab-pane -->
+                                    
+                                    <div class="tab-pane fade" id="tab-address" role="tabpanel" aria-labelledby="tab-address-link">
+                                        <p>Следующие адреса будут использоваться по умолчанию на странице оформления заказа.</p>
+                                    
                                         <div class="row">
-                                            <div class="col-sm-6">
-                                                <label>Имя *</label>
-                                                <input type="text" class="form-control" required>
-                                            </div><!-- End .col-sm-6 -->
-                            
-                                            <div class="col-sm-6">
-                                                <label>Фамилия *</label>
-                                                <input type="text" class="form-control" required>
-                                            </div><!-- End .col-sm-6 -->
-                                        </div><!-- End .row -->
-                            
-                                        <label>Название компании (необязательно)</label>
-                                        <input type="text" class="form-control">
-                            
-                                        <label>Страна *</label>
-                                        <input type="text" class="form-control" required>
-                            
-                                        <label>Адрес *</label>
-                                        <input type="text" class="form-control" placeholder="Номер дома и название улицы" required>
-                                        <input type="text" class="form-control" placeholder="Квартира, номер офиса и т.д." required>
-                            
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label>Город *</label>
-                                                <input type="text" class="form-control" required>
-                                            </div><!-- End .col-sm-6 -->
-                            
-                                            <div class="col-sm-6">
-                                                <label>Штат / Область *</label>
-                                                <input type="text" class="form-control" required>
-                                            </div><!-- End .col-sm-6 -->
-                                        </div><!-- End .row -->
-                            
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label>Почтовый индекс *</label>
-                                                <input type="text" class="form-control" required>
-                                            </div><!-- End .col-sm-6 -->
-                            
-                                            <div class="col-sm-6">
-                                                <label>Телефон *</label>
-                                                <input type="tel" class="form-control" required>
-                                            </div><!-- End .col-sm-6 -->
-                                        </div><!-- End .row -->
-                            
-                                        <label>Адрес электронной почты *</label>
-                                        <input type="email" class="form-control" required>
-                            
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="checkout-create-acc">
-                                            <label class="custom-control-label" for="checkout-create-acc">Создать учетную запись?</label>
-                                        </div><!-- End .custom-checkbox -->
-                            
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="checkout-diff-address">
-                                            <label class="custom-control-label" for="checkout-diff-address">Доставить на другой адрес?</label>
-                                        </div><!-- End .custom-checkbox -->
-                            
-                                        <label>Примечания к заказу (необязательно)</label>
-                                        <textarea class="form-control" cols="30" rows="4" placeholder="Примечания к вашему заказу, например, особые указания по доставке"></textarea>
-                                </div><!-- End .col-lg-9 -->
-                                <aside class="col-lg-3">
-                                    <div class="summary">
-                                        <h3 class="summary-title">Ваш заказ</h3><!-- End .summary-title -->
-                            
-                                        <table class="table table-summary">
-                                            <thead>
-                                                <tr>
-                                                    <th>Продукт</th>
-                                                    <th>Итого</th>
-                                                </tr>
-                                            </thead>
-                            
-                                            <tbody>
-                                                <tr>
-                                                    <td><a href="#">Бежевые вязанные эластичные кроссовки</a></td>
-                                                    <td>$84.00</td>
-                                                </tr>
-                            
-                                                <tr>
-                                                    <td><a href="#">Синее джинсовое платье с карманами</a></td>
-                                                    <td>$76,00</td>
-                                                </tr>
-                                                <tr class="summary-subtotal">
-                                                    <td>Подытог:</td>
-                                                    <td>$160.00</td>
-                                                </tr><!-- End .summary-subtotal -->
-                                                <tr>
-                                                    <td>Доставка:</td>
-                                                    <td>Бесплатная доставка</td>
-                                                </tr>
-                                                <tr class="summary-total">
-                                                    <td>Итого:</td>
-                                                    <td>$160.00</td>
-                                                </tr><!-- End .summary-total -->
-                                            </tbody>
-                                        </table><!-- End .table table-summary -->
-                            
-                                        <div class="accordion-summary" id="accordion-payment">
-                                            <div class="card">
-                                                <div class="card-header" id="heading-1">
-                                                    <h2 class="card-title">
-                                                        <a role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-                                                            Прямой банковский перевод
-                                                        </a>
-                                                    </h2>
-                                                </div><!-- End .card-header -->
-                                                <div id="collapse-1" class="collapse show" aria-labelledby="heading-1" data-parent="#accordion-payment">
+                                            <div class="col-lg-6">
+                                                <div class="card card-dashboard">
                                                     <div class="card-body">
-                                                        Совершите оплату непосредственно на наш банковский счет. Пожалуйста, используйте ваш идентификатор заказа в качестве ссылки на платеж. Ваш заказ не будет отправлен до тех пор, пока средства не поступят на наш счет.
+                                                        <h3 class="card-title">Адрес для выставления счета</h3><!-- End .card-title -->
+                                    
+                                                        <p>Имя пользователя<br>
+                                                        Компания пользователя<br>
+                                                        Ул. Джон<br>
+                                                        Нью-Йорк, NY 10001<br>
+                                                        1-234-987-6543<br>
+                                                        ваша_почта@mail.com<br>
+                                                        <a href="#">Редактировать <i class="icon-edit"></i></a></p>
                                                     </div><!-- End .card-body -->
-                                                </div><!-- End .collapse -->
-                                            </div><!-- End .card -->
-                            
-                                            <div class="card">
-                                                <div class="card-header" id="heading-2">
-                                                    <h2 class="card-title">
-                                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                                                            Оплата чеком
-                                                        </a>
-                                                    </h2>
-                                                </div><!-- End .card-header -->
-                                                <div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordion-payment">
+                                                </div><!-- End .card-dashboard -->
+                                            </div><!-- End .col-lg-6 -->
+                                    
+                                            <div class="col-lg-6">
+                                                <div class="card card-dashboard">
                                                     <div class="card-body">
-                                                        Ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+                                                        <h3 class="card-title">Адрес доставки</h3><!-- End .card-title -->
+                                    
+                                                        <p>Вы еще не настроили этот тип адреса.<br>
+                                                        <a href="#">Редактировать <i class="icon-edit"></i></a></p>
                                                     </div><!-- End .card-body -->
-                                                </div><!-- End .collapse -->
-                                            </div><!-- End .card -->
-                            
-                                            <div class="card">
-                                                <div class="card-header" id="heading-3">
-                                                    <h2 class="card-title">
-                                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-                                                            Наложенный платеж
-                                                        </a>
-                                                    </h2>
-                                                </div><!-- End .card-header -->
-                                                <div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordion-payment">
-                                                    <div class="card-body">Quisque volutpat mattis eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
-                                                    </div><!-- End .card-body -->
-                                                </div><!-- End .collapse -->
-                                            </div><!-- End .card -->
-                            
-                                            <div class="card">
-                                                <div class="card-header" id="heading-4">
-                                                    <h2 class="card-title">
-                                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-                                                            PayPal <small class="float-right paypal-link">Что такое PayPal?</small>
-                                                        </a>
-                                                    </h2>
-                                                </div><!-- End .card-header -->
-                                                <div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordion-payment">
-                                                    <div class="card-body">
-                                                        Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum.
-                                                    </div><!-- End .card-body -->
-                                                </div><!-- End .collapse -->
-                                            </div><!-- End .card -->
-                            
-                                            <div class="card">
-                                                <div class="card-header" id="heading-5">
-                                                    <h2 class="card-title">
-                                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
-                                                            Кредитная карта (Stripe)
-                                                            <img src="assets/images/payments-summary.png" alt="payments cards">
-                                                        </a>
-                                                    </h2>
-                                                </div><!-- End .card-header -->
-                                                <div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordion-payment">
-                                                    <div class="card-body"> Donec nec justo eget felis facilisis fermentum.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Lorem ipsum dolor sit ame.
-                                                    </div><!-- End .card-body -->
-                                                </div><!-- End .collapse -->
-                                            </div><!-- End .card -->
-                                        </div><!-- End .accordion -->
-                            
-                                        <button type="submit" class="btn btn-outline-primary-2 btn-order btn-block">
-                                            <span class="btn-text">Оформить заказ</span>
-                                            <span class="btn-hover-text">Перейти к оформлению</span>
-                                        </button>
-                                    </div><!-- End .summary -->
-                                </aside><!-- End .col-lg-3 -->
-                            </div><!-- End .row -->
-                            
-            			</form>
+                                                </div><!-- End .card-dashboard -->
+                                            </div><!-- End .col-lg-6 -->
+                                        </div><!-- End .row -->
+                                    </div><!-- .End .tab-pane -->
+                                    
+
+								    <div class="tab-pane fade" id="tab-account" role="tabpanel" aria-labelledby="tab-account-link">
+                                        <form action="#">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label>Имя *</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div><!-- End .col-sm-6 -->
+                                    
+                                                <div class="col-sm-6">
+                                                    <label>Фамилия *</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div><!-- End .col-sm-6 -->
+                                            </div><!-- End .row -->
+                                    
+                                            <label>Отображаемое имя *</label>
+                                            <input type="text" class="form-control" required>
+                                            <small class="form-text">Это будет отображаться в разделе аккаунта и в отзывах</small>
+                                    
+                                            <label>Адрес электронной почты *</label>
+                                            <input type="email" class="form-control" required>
+                                    
+                                            <label>Текущий пароль (оставьте пустым, если не хотите изменять)</label>
+                                            <input type="password" class="form-control">
+                                    
+                                            <label>Новый пароль (оставьте пустым, если не хотите изменять)</label>
+                                            <input type="password" class="form-control">
+                                    
+                                            <label>Подтвердите новый пароль</label>
+                                            <input type="password" class="form-control mb-2">
+                                    
+                                            <button type="submit" class="btn btn-outline-primary-2">
+                                                <span>СОХРАНИТЬ ИЗМЕНЕНИЯ</span>
+                                                <i class="icon-long-arrow-right"></i>
+                                            </button>
+                                        </form>
+                                    </div><!-- .End .tab-pane -->
+                                    
+								</div>
+	                		</div><!-- End .col-lg-9 -->
+	                	</div><!-- End .row -->
 	                </div><!-- End .container -->
-                </div><!-- End .checkout -->
+                </div><!-- End .dashboard -->
             </div><!-- End .page-content -->
         </main><!-- End .main -->
 
         <footer class="footer">
-            <div class="cta bg-image bg-dark pt-4 pb-5 mb-0" style="background-image: url(assets/images/demos/demo-4/bg-5.jpg);">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-sm-10 col-md-8 col-lg-6">
-                            <div class="cta-heading text-center">
-                                <h3 class="cta-title text-white">Получите последние предложения</h3><!-- End .cta-title -->
-                                <p class="cta-desc text-white">и получите <span class="font-weight-normal">$20 купон</span> на первую покупку</p><!-- End .cta-desc -->
-                            </div><!-- End .text-center -->
-                        
-                            <form action="#">
-                                <div class="input-group input-group-round">
-                                    <input type="email" class="form-control form-control-white" placeholder="Введите ваш Email" aria-label="Email Address" required>
-                                    <div class="input-group-append">
-                                        <button class="btn btn-primary" type="submit"><span>Подписаться</span><i class="icon-long-arrow-right"></i></button>
-                                    </div><!-- .End .input-group-append -->
-                                </div><!-- .End .input-group -->
-                            </form>
-                        </div><!-- End .col-sm-10 col-md-8 col-lg-6 -->
-                    </div><!-- End .row -->
-                </div><!-- End .container -->
-            </div><!-- End .cta -->
-            
             <div class="footer-middle">
                 <div class="container">
                     <div class="row">
@@ -1180,6 +1080,7 @@
             </div><!-- End .modal-content -->
         </div><!-- End .modal-dialog -->
     </div><!-- End .modal -->
+
 
     <!-- Plugins JS File -->
     <script src="assets/js/jquery.min.js"></script>

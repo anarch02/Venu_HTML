@@ -178,7 +178,7 @@
     margin-left: .7rem; }
   .banner-link:hover, .banner-link:focus {
     color: #fff;
-    background-color: #3399ff;
+    background-color: #c96;
     text-decoration: none !important; }
 
 .nav.nav-pills .nav-link {
@@ -235,17 +235,17 @@
   text-decoration: none; }
 
 .btn-product-icon {
-  color: #3399ff;
-  border-color: #3399ff;
+  color: #c96;
+  border-color: #c96;
   background-color: transparent;
-  border: 0.1rem solid #3399ff; }
+  border: 0.1rem solid #c96; }
   .btn-product-icon span {
-    background-color: #3399ff;
+    background-color: #c96;
     top: -1px;
     bottom: -1px; }
   .btn-product-icon:hover, .btn-product-icon:focus {
-    color: #3399ff;
-    border-color: #3399ff;
+    color: #c96;
+    border-color: #c96;
     background-color: transparent; }
 
 .btn-wishlist:hover:before, .btn-wishlist:focus:before {
@@ -325,7 +325,7 @@
     padding: .9rem 0 .3rem;
     margin-left: .8rem;
     margin-right: .8rem;
-    background-color: #3399ff;
+    background-color: #c96;
     border-radius: .3rem;
     border: none;
     margin-bottom: 2rem; }
@@ -458,7 +458,7 @@
     bottom: 0;
     width: 100%;
     height: .1rem;
-    background-color: #3399ff;
+    background-color: #c96;
     transform-origin: right center;
     transform: scale(0, 1);
     transition: transform .3s ease; }
@@ -491,7 +491,7 @@
     display: block;
     font-weight: 400;
     font-size: 2rem;
-    color: #3399ff; }
+    color: #c96; }
     .widget-call a:hover, .widget-call a:focus {
       color: #1a8cff;
       box-shadow: none; }
